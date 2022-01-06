@@ -1,0 +1,53 @@
+<p>
+    Birthday is {{birthday | date}}
+
+</p>
+
+<p>
+    {{birthday | date:'short'}}
+</p>
+
+<p>
+    {{birthday | date | uppercase}}
+</p>
+
+<p>
+    {{birthday | date:'fullDate' | uppercase}}
+</p>
+
+<p>
+    Name: {{ name | uppercase}}
+</p>
+
+<p>
+    Name: {{ name | slice:2}}
+</p>
+
+<div>
+    <h2>Find the size of a file</h2>
+    <p>Size: {{288966 | fileSizePipe: 'GB'}}</p>
+</div>
+
+<p>
+    {{ 'Hello World' | uppercase}}
+</p>
+
+<p>{{'welcome to angular pipes' | titlecase}}</p>
+
+<p>Square of 2 is {{ 2 | squarenum }}</p>
+
+<div>
+    Defaults to USD:
+    <p>{{totalAmount | currency}}</p>
+</div>
+
+<div>
+    Format To Nepali Currency:
+    <p>
+        {{totalAmount | currency: 'NPR '}}
+    </p>
+</div>
+
+<div>
+    {{'welcome' | capitalize}}
+</div>
